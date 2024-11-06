@@ -1,25 +1,26 @@
 {% extends "layout.html" %}
 
+
 {% block content %}
 
 <h1> Welcome to QuickStatements 3.0 </h1>
 
 <article>
-  <a role="button" href="{% url 'new_batch' %}" style="background-color: blue;"> New batch </a>
+  <a role="button" href="{% url 'new_batch' %}" style="background-color: blue !important;"> New batch </a>
 </article>
 
 
 <form id="batchForm">
   <fieldset role="group">
     <input id="batchInput" type="number" placeholder="Batch ID..." oninput="updateBatchForm()" required />
-    <input type="submit" value="See batch details" />
+    <input type="submit" value="See batch details" style="background-color: blue !important;"/>
   </fieldset>
 </form>
 
 <form id="userForm">
   <fieldset role="group">
     <input id="userInput" type="text" placeholder="Username..." oninput="updateUserForm()" required />
-    <input type="submit" value="See batches by user" />
+    <input type="submit" value="See batches by user" style="background-color: blue !important;"/>
   </fieldset>
 </form>
 
